@@ -1,0 +1,59 @@
+p {
+	display: inline-block;
+	font-family: 'Marker Felt';
+}
+
+li {
+	border-style: dashed;
+	width: 433px;
+    margin: auto;
+    margin-bottom: 6px;
+    padding: 0 26px;
+    background-color: #f3d6a2;
+}
+
+ol {
+	padding: 0px;
+	list-style-position: inside;
+	font-family: 'Marker Felt';
+}
+
+#enter {
+	border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+	font-family: 'Marker Felt';
+	font-size: 16px;
+	background-color: red;
+}
+
+.doneButton {
+	border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    float: right;
+    margin-top: 14px;
+    font-family: 'Marker Felt';
+}
+
+#listInput {
+	border-style: dotted;
+    border-radius: 5px;
+    font-size: 22px;
+	font-family: 'Marker Felt';
+	background-color: lightcyan;
+}
+
+.green {
+	background-color: #16e616;
+}
+
+#input {
+	text-align: center;
+
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Marker Felt';
+}
