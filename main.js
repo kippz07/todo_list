@@ -9,9 +9,10 @@ $(function () {
 	$button.click( function (event) {
 		event.preventDefault();
 		$userInput = $listInput.val();
-		if ($userInput != '') {
+		if (($userInput != '') && ($userInput.length < 40)) {
 			$('ol').append('<li><p>' + $userInput + '</p> <button class="doneButton">done</button></li>');
 			$('#listInput').val('');
+			console.log($userInput.length);
 		}
 		
 	});
@@ -20,7 +21,7 @@ $(function () {
     	if(event.keyCode == 13){
         	event.preventDefault();
 			$userInput = $listInput.val();
-			if ($userInput != '') {
+			if (($userInput != '') && ($userInput.length < 40)) {
 				$('ol').append('<li><p>' + $userInput + '</p> <button class="doneButton">done</button></li>');
 				$('#listInput').val('');
 			}
