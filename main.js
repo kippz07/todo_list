@@ -7,7 +7,6 @@ $(function () {
 	var userInput = '';
 
 	$button.click( function (event) {
-		event.preventDefault();
 		$userInput = $listInput.val();
 		if (($userInput != '') && ($userInput.length < 40)) {
 			$('ol').append('<li><p>' + $userInput + '</p> <button class="doneButton">done</button></li>');
@@ -19,7 +18,6 @@ $(function () {
 
 	$listInput.keyup(function(event){
     	if(event.keyCode == 13){
-        	event.preventDefault();
 			$userInput = $listInput.val();
 			if (($userInput != '') && ($userInput.length < 40)) {
 				$('ol').append('<li><p>' + $userInput + '</p> <button class="doneButton">done</button></li>');
